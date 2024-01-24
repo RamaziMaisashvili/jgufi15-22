@@ -1,0 +1,13 @@
+.Block_nika{
+    border: 1px solid rgb(17, 14, 14);
+    background-color: rgb(17, 17, 17);
+    height: 100px;
+    position: relative;
+    width: 100px;
+    animation: moveBlock 7s infinite ;
+}
+@keyframes moveBlock {
+    from {left: 0px;}
+    to {left: 95%;}
+
+}
