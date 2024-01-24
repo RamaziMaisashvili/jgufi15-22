@@ -1,0 +1,21 @@
+body {
+    background-color: black;
+}
+.box {
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+    animation-name: test-anim;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes test-anim {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(2000px);
+    }
+
+}
