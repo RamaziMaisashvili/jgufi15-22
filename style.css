@@ -1,0 +1,17 @@
+.animat{
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    position: relative;
+    animation: anima 4s infinite ;
+}
+
+@keyframes anima {
+    from{
+        left: 0;
+    }
+    to{
+        left: 100%;
+    }
+}
