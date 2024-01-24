@@ -4,16 +4,14 @@ height: 100px;
 background-color: red;
 position: relative;
 animation-name: example;
-animation-duration: 4s;
+animation-duration: 7s;
 animation-iteration-count: infinite;
 }
 
 @keyframes example {
-0%   {background-color:red; left:0px; top:0px;}
-25%  {background-color:yellow; left:200px; top:0px;}
-50%  {background-color:blue; left:200px; top:200px;}
-75%  {background-color:green; left:0px; top:200px;}
-100% {background-color:red; left:0px; top:0px;}
+from {transform: translateX(0px);}
+to {transform: translateX(1000px);}
+
 }
 p {
     font-size: 3rem;
@@ -28,9 +26,9 @@ p {
   }
 
   @keyframes mamuka{
-0%{color: black; rotate: 0%deg ;}
-10%{color:rgb(202, 27, 115);transform:rotate(10%deg)}
-20%{color:rgb(153, 26, 26);transform:rotate( 20%deg)}
+0%{color: rgb(160, 23, 23); rotate: 0%deg ;}
+10%{color:rgb(222, 202, 26);transform:rotate(10%deg)}
+20%{color:rgb(15, 85, 214);transform:rotate( 20%deg)}
 30%{color:rgb(36, 194, 83);transform:rotate( 30%deg)}
-40%{color:rgb(213, 213, 30);transform:rotate( 40%deg)}
+40%{color:rgb(167, 16, 16);transform:rotate( 40%deg)}
 }
