@@ -1,0 +1,23 @@
+@import "reset.css";
+
+
+.flower,.jug{
+    display: inline-block;
+    border: 1px solid black;
+}
+
+.jug:hover
+{
+    position: relative;
+    transform: rotate(-29deg);
+    transition: transform 1s ease;
+}
+.flower:hover{
+    position: relative;
+    transform: scale(1,1.2);
+    transition: transform 2s ease-in;
+
+}
+.cont:hover{
+    transition: transform 2s ease-in;  
+}
