@@ -5,7 +5,10 @@ body,
 html {
 	height: 100%;
 }
+:root {
+--sichqare: 5s ;
 
+}
 body {
 	background: rgb(209, 228, 234);
 	background: -moz-radial-gradient(center, ellipse cover, rgba(209, 228, 234, 1) 0%, rgba(186, 228, 244, 1) 100%);
@@ -21,31 +24,30 @@ body {
 	margin: 0;
 }
 
-/*.knopka {
-	border: 1px soli rgb(155, 156, 155);
-	border-radius: 40%;
-	background-color: green;
-	box-shadow: 0 0 50px rgba(255, 153, 68, 0.7);
-	width: 50px;
-	height: 50px;
-	left: 10px;
-}
 
-/*.knopka:hover+.street * {
-
-	animation-play-state: paused;
-}*/
-
-/*#speed:checked ~ .street > .car {
-	animation-duration: 3s;
-}*/
-.speed1:checked ~ .street > .car {
-	animation-duration: 5s;
-}
+input[type="range"] {
+	writing-mode: bt-lr;
+	-webkit-appearance: slider-vertical;
+  }
+/*.slider-wrapper {
+	
+	display: inline-block;
+	width: 20px;
+	height: 150px;
+	padding: 0;
+  }
+  .slider-wrapper input {
+	width: 150px;
+	height: 20px;
+	margin: 0;
+	transform-origin: 75px 75px;
+	transform: rotate(-90deg);
+  }*/
 
 #switch:checked + .street *{
 	animation-play-state: paused;
 }
+
 
 .country-wrap {
 	position: relative;
@@ -242,7 +244,7 @@ body {
 	bottom: 200px;
 	width: 2px;
 	height: 50px;
-	background: $cd;
+	background: 5ch;
 	margin-right: 20px;
 }
 
@@ -251,7 +253,7 @@ body {
 	left: -10px;
 	width: 22px;
 	height: 2px;
-	background: $cd;
+	background: 5ch;
 }
 
 .la:after {
@@ -259,7 +261,7 @@ body {
 	left: -2px;
 	width: 6px;
 	height: 12px;
-	background: $cd;
+	background: 5ch;
 }
 
 .l {
@@ -280,28 +282,18 @@ body {
 }
 
 /*styles for car*/
-.car {
+#avto {
 	position: absolute;
 
 	top: -35%;
 	z-index: 10;
-	animation: myfirst 10s linear infinite;
-
+	animation: myfirst 3s linear infinite;
+	
 }
 
 
 
-@-moz-keyframes myfirst {
-	0% {
-		left: -25%;
-	}
-
-	100% {
-		left: 100%;
-	}
-}
-
-@-webkit-keyframes myfirst {
+@keyframes myfirst {
 	0% {
 		left: -25%;
 	}
@@ -923,4 +915,4 @@ body {
 	left: -15px;
 	border-radius: 50px;
 	box-shadow: 100px 0 0 #fff;
-	background: #fff;
+	background: #fff; }
