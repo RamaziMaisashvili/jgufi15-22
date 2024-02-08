@@ -117,13 +117,10 @@ tr:nth-child(even) {
     display: inline-block;
     margin-left: 104px; 
     color: white;
-}
-.nika {
-    align-items: left;
-    display: inline-block;
-}
-.link{
-  color: aliceblue;
+    position: relative;
+    background-position: center;
+
+    
 }
 .img{
     max-width: 700px;
@@ -142,4 +139,15 @@ tr:nth-child(even) {
 }
 .text-box p{
     font-size: 16px;
+}
+.mediaicons{
+    padding: 0;
+    width: 40px;
+    text-decoration: none;
+}
+.mediaicons:hover{
+    opacity: 0.7;
+}
+.mediaicons{
+    color: #11122b;
 }
