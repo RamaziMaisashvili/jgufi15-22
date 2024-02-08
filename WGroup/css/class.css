@@ -5,6 +5,10 @@ td {
     border-radius: 20px;
     padding: 10px;
 }
+th{
+    text-align: center;
+    padding: 20px;
+}
 .classdiv{
     width: 100%;
     text-align: center;
