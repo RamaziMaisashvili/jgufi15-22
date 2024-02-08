@@ -1,0 +1,17 @@
+.footer_container{
+    background-color: #11122b;
+    display: inline-block;
+    width: 100%;
+    
+}
+.adress_iberia{
+  display:inline-block; 
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 7px;
+}
+.information-natia{
+    display: inline-block;
+    margin-left: 104px; 
+    color: white;
+}
