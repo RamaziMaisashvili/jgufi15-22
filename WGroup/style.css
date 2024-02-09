@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+nav {
+  position: relative;
+  background: #11122b;
+  width: 100%;
+  padding: 0;
+
+}
+
+nav .menu {
+  max-width: 1250px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu .logo a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+
+}
+
+.menu ul {
+  display: inline-flex;
+}
+
+.menu ul li {
+  list-style: none;
+  margin-left: 7px;
+}
+
+.menu ul li:first-child {
+  margin-left: 0px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+  padding: 8px 32px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.menu ul li a:hover {
+  background: #fff;
+  color: black;
+}
+
+.img {
+  background: url('img3.jpg')no-repeat;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.img::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+table,
+th,
+td {
+  border: 3px solid rgb(73, 73, 73);
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.classdiv {
+  width: 100%;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+table {
+  width: 40%;
+  left: 100px;
+  text-align: initial;
+  margin: 0 auto;
+}
+
+.fa-user {
+  font-size: 3rem;
+  position: relative;
+  left: 35%;
+}
+
+tr:nth-child(even) {
+  background-color: #62638a;
+}
+
+
+td:hover {
+  background-color: #505058;
+  cursor: pointer;
+}
+
+.footer_container {
+  background-color: #11122b;
+  display: inline-block;
+  width: 100%;
+
+}
+
+.adress_iberia {
+  display: inline-block;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 7px;
+}
+
+.information-natia {
+  display: inline-block;
+  margin-left: 104px;
+  color: white;
+  position: relative;
+  background-position: center;
+
+
+}
+
+.img {
+  max-width: 700px;
+  max-height: 500px;
+  float: left;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  margin-right: 15px;
+
+}
+
+.text-box {
+  color: #11122b;
+}
+
+.text-box h1 {
+  font-size: 42px;
+}
+
+.text-box {
+  font-size: 16px;
+  background-color: white;
+  height: 500px;
+  width:1400px;
+  display: inline-block;
+  border-radius: 10px;
+ margin-top: 62px;
+ margin-left: 15%;
+}
+
+.wrapper_natia {
+  padding: 10px;
+  margin-bottom: 10px;
+  height:  800px;
+  width: 100%;
+
+}
+
+.information-natia a {
+  color: white;
+  text-decoration: none;
+}
+main{
+background-image:url("/img/background.jpg") ;
+padding-bottom: 1px;
+}
