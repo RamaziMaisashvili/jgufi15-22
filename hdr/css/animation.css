@@ -1,0 +1,158 @@
+main {
+    display: block;
+    position: relative;
+
+}
+.lastanim, .firstanim{
+    display: inline-block;
+    width: auto;
+}
+.box {
+    position: relative;
+    width: 700px;
+    height: 535px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#00ccff, #d500f9);
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.box::before {
+    content: '';
+    position: absolute;
+    width: 180px;
+    height: 140%;
+    background-color: black;
+    box-shadow: 0 0 20px rgb(8, 8, 8);
+    animation: animate 4s linear infinite;
+}
+
+.box::after {
+    content: '';
+    position: absolute;
+    inset: 10px;
+    background-color: #26274a;
+    background-repeat: no-repeat;
+    background-image: url(../img/logo.png);
+    background-position: center;
+    z-index: 2;
+    border-radius: 16px;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes blinkCursor {
+    50% {
+        border-right-color: transparent;
+    }
+}
+
+@keyframes typeAndDelete {
+
+    0%,
+    10% {
+        width: 0;
+    }
+
+    45%,
+    55% {
+        width: 15.2em;
+    }
+
+    /* adjust width based on content */
+    90%,
+    100% {
+        width: 0;
+    }
+}
+
+.terminal-loader {
+    border: 0.1em solid #333;
+    background-color: #1a1a1a;
+    color: #0f0;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1em;
+    padding: 1.5em 1em;
+    width: 12em;
+    margin: 100px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    
+    width: 400px;
+    height: 400px;
+}
+
+.terminal-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1.5em;
+    background-color: #333;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: 0 0.4em;
+    box-sizing: border-box;
+}
+
+.terminal-controls {
+    float: right;
+}
+
+.control {
+    display: inline-block;
+    width: 0.6em;
+    height: 0.6em;
+    margin-left: 0.4em;
+    border-radius: 50%;
+    background-color: #777;
+}
+
+.control.close {
+    background-color: #e33;
+}
+
+.control.minimize {
+    background-color: #ee0;
+}
+
+.control.maximize {
+    background-color: #0b0;
+}
+
+.terminal-title {
+    float: left;
+    line-height: 1.5em;
+    color: #eee;
+    
+}
+
+.text {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.2em solid green;
+    /* Cursor */
+    animation: typeAndDelete 4s steps(11) infinite,
+        blinkCursor 0.5s step-end infinite alternate;
+    margin-top: 1.5em;
+    text-align: center;
+}
+main{
+    height: 800px;
+    margin-top: 70px;
+    margin-left: 50px;
+}
